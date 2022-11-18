@@ -1,0 +1,15 @@
+In this homework fit and select a classifier to predict credit card default using `default_of_credit_card_clients` dataset from BlackBoard course site. The data description is available at : https://www.kaggle.com/datasets/jishnukoliyadan/taiwan-default-credit-card-clients
+
+1. Explore (5+5+10=20 points)
+  1. load the dataset. Use only the columns "LIMIT_BAL", "SEX", "EDUCATION", "MARRIAGE", and "AGE" among predictors. The target is "default payment next month". 
+  1. identify the categorical features (with brief explanation), and 
+  1. produce the pairwise scatter plot only for the numeric variables. 
+1. Prepare a pipeline to (30 points)
+  1. standardize the numeric attributes
+  1. expand the categorical attributes to columns of 0/1 variables
+  1. fit a `RandomForestClassifier` classifier
+1. Search over the `max_depth` and `min_samples_leaf` parameters to find the best model per **balanced accuracy** metric. Use at least three different search strategies and discuss any differences you see in the results. (20 points)
+1. Let's assume that the cost of missing a default (i.e., predicting non-default for a customer who ended up defaulting) is 10 times the cost of flagging a non-defaulter as defaulter. Let's further assume that the cost of correct predictions are 0. Use any one of the search strategies considered in the previous question to find the `RandomForestClassifier` that minimizes the cost. (20 points)
+1. Collaboration statement: Who did you discuss while answering this homework (whether to get or to provide help)? What questions/topics did you discuss? (10 points)
+
+Note: No penalty for either side. While getting help in figuring out how to solve is OK, all answers should be produced by you. 
